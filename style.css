@@ -42,13 +42,31 @@ body {
 }
 
 .nav-links a {
-  color: #bbc9cf;
-  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: none;
+
+  background: #00d4ff;
+  color: #030202;
+
+  font-weight: bold;
+  cursor: pointer;
+
   transition: 0.3s;
 }
 
 .nav-links a:hover {
-  color: #00aaff;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: none;
+
+  color: #00d4ff;
+  background: #0c0c0c;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
 }
 
 .hire-btn {
@@ -144,6 +162,21 @@ body {
 
 .primary-btn:hover {
   box-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
+}
+
+.primary-btn:hover {
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
+}
+
+.secondary-btn:hover {
+  background: #00d4ff;
+  color: #000;
+
+  transform: translateY(-5px) scale(1.05);
+
+  box-shadow: 0 0 35px rgba(0, 212, 255, 0.8);
+
+  border-color: #00d4ff;
 }
 
 /* ABOUT */
