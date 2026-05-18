@@ -1,0 +1,284 @@
+body {
+  background-color: #0f0f0f;
+  color: #e5e2e1;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+
+  max-width: 1400px;
+
+  padding: 15px 30px;
+
+  border-radius: 999px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  z-index: 999;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Sora", sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #bbc9cf;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00aaff;
+}
+
+.hire-btn {
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: none;
+
+  background: #00d4ff;
+  color: #000;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.hire-btn:hover {
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+}
+
+/* HERO */
+.hero-section {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  position: relative;
+
+  padding: 100px 20px;
+}
+
+.hero-gradient {
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 212, 255, 0.1),
+    transparent 70%
+  );
+
+  z-index: -1;
+}
+
+.hero-content h1 {
+  font-size: 80px;
+  font-family: "Sora", sans-serif;
+  line-height: 1.1;
+}
+
+.hero-content span {
+  color: #00d4ff;
+}
+
+.hero-content p {
+  max-width: 700px;
+  margin: 20px auto;
+  color: #bbc9cf;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  margin-top: 40px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 16px 32px;
+  border-radius: 999px;
+
+  text-decoration: none;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background: #00d4ff;
+  color: #000;
+}
+
+.secondary-btn {
+  border: 1px solid #3c494e;
+  color: white;
+}
+
+.primary-btn:hover {
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
+}
+
+/* ABOUT */
+.about-section {
+  padding: 120px 60px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+
+  align-items: center;
+
+  background: #0e0e0e;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about-content span {
+  color: #00d4ff;
+  letter-spacing: 3px;
+}
+
+.about-content h2 {
+  font-size: 42px;
+  margin: 20px 0;
+}
+
+.about-content p {
+  color: #bbc9cf;
+  line-height: 1.8;
+}
+
+.about-stats {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.glass-card {
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* SKILLS */
+.skills-section {
+  padding: 120px 60px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title span {
+  color: #00d4ff;
+}
+
+.section-title h2 {
+  font-size: 48px;
+  margin-top: 10px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  padding: 40px;
+  text-align: center;
+
+  border-radius: 20px;
+
+  background: rgba(18, 18, 18, 0.7);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+.skill-card span {
+  font-size: 50px;
+  color: #00d4ff;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer h2 {
+  font-family: "Sora", sans-serif;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 50px;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}

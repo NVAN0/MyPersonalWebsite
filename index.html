@@ -1,0 +1,172 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Novanpt</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700;800&family=Hanken+Grotesk:wght@400;500&family=JetBrains+Mono:wght@500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              background: "#131313",
+              surface: "#131313",
+              primary: "#a8e8ff",
+              "primary-container": "#00d4ff",
+              "on-primary-container": "#00586b",
+              "surface-container-low": "#1c1b1b",
+              "surface-container-lowest": "#0e0e0e",
+              "outline-variant": "#3c494e",
+              "on-surface": "#e5e2e1",
+              "on-surface-variant": "#bbc9cf",
+              secondary: "#dfb7ff",
+              tertiary: "#dedfdf",
+              "tertiary-container": "#c2c3c3",
+              "on-tertiary-container": "#4f5051",
+            },
+
+            fontFamily: {
+              sora: ["Sora"],
+              grotesk: ["Hanken Grotesk"],
+              mono: ["JetBrains Mono"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-grotesk overflow-x-hidden">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">NOVAN WAHYU R</div>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <button class="hire-btn">Hire Me</button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero-section">
+      <div class="hero-gradient"></div>
+
+      <div class="hero-content">
+        <h1>
+          Softwere Engineer <br />
+          & <span>Designer</span>
+        </h1>
+
+        <p>
+          Saya membuat web dan membuat desain visual, editing video, dan animasi
+          kreatif modern dan beberapa kasus saya memodifikasi kecerdasan buatan
+          dalam game basis open world.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#portfolio" class="primary-btn"> Lihat Portfolio </a>
+
+          <a href="#contact" class="secondary-btn"> Hubungi Saya </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+      <div class="about-image">
+        <img src="novanp.png" />
+      </div>
+
+      <div class="about-content">
+        <span>ABOUT ME</span>
+
+        <h2>Design & Softwere Engineer</h2>
+
+        <p>
+          Fokus pada produksi konten digital berkualitas tinggi menggunakan
+          adobe ilulator dan potoshop, Filmora, Adobe Premiere Pro, dan
+          front-end development dan modifikasi AI behavior berbasis script
+          maupun code.
+        </p>
+
+        <div class="about-stats">
+          <div class="glass-card">
+            <h3>6+</h3>
+            <p>Years of Passion</p>
+          </div>
+
+          <div class="glass-card">
+            <h3>50+</h3>
+            <p>Project Selesai</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills-section">
+      <div class="section-title">
+        <span>SPECIALIZATION</span>
+        <h2>Core Technical Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="material-symbols-outlined">movie</span>
+          <h3>Video Editing</h3>
+          <p>Filmora & Premiere Pro</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="material-symbols-outlined">palette</span>
+          <h3>Graphic Design</h3>
+          <p>Modern Design</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="material-symbols-outlined">animation</span>
+          <h3>Animation</h3>
+          <p>Motion & Keyframe</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="material-symbols-outlined">code</span>
+          <h3>Web & Game Dev</h3>
+          <p>HTML CSS JS</p>
+          <p>AI behivior</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <h2>NOVAN WAHYU R</h2>
+
+      <p>© 2026 Spectral Precision Portfolio</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
