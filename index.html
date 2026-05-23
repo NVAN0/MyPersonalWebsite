@@ -1,180 +1,1430 @@
 <!doctype html>
-<html class="dark" lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>NOVAN WAHYU R</title>
-
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta
+      name="description"
+      content="Personal portfolio of Novan Wahyu R — Web Designer, Graphic Designer, and Content Creator based in karawang,Bandung and other city in indonesia."
+    />
+    <meta property="og:title" content="Novan Wahyu R — Portfolio" />
+    <meta
+      property="og:description"
+      content="Web Designer, Graphic Designer & Content Creator"
+    />
 
     <!-- Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700;800&family=Hanken+Grotesk:wght@400;500&family=JetBrains+Mono:wght@500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&f[]=satoshi@300,400,500,700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- CSS -->
+    <!-- Lucide Icons -->
+    <script
+      src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"
+      defer
+    ></script>
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Tailwind Config -->
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              background: "#131313",
-              surface: "#131313",
-              primary: "#a8e8ff",
-              "primary-container": "#00d4ff",
-              "on-primary-container": "#00586b",
-              "surface-container-low": "#1c1b1b",
-              "surface-container-lowest": "#0e0e0e",
-              "outline-variant": "#3c494e",
-              "on-surface": "#e5e2e1",
-              "on-surface-variant": "#bbc9cf",
-              secondary: "#dfb7ff",
-              tertiary: "#dedfdf",
-              "tertiary-container": "#c2c3c3",
-              "on-tertiary-container": "#4f5051",
-            },
-
-            fontFamily: {
-              sora: ["Sora"],
-              grotesk: ["Hanken Grotesk"],
-              mono: ["JetBrains Mono"],
-            },
-          },
-        },
-      };
-    </script>
   </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
 
-  <body class="font-grotesk overflow-x-hidden">
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="logo">NOVAN WAHYU R</div>
-
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-      </div>
-      <a
-        href="https://mail.google.com/mail/?view=cm&fs=1&to=ghostnv70@gmail.com"
-        target="_blank"
-        class="secondary-btn hover:bg-cyan-400 hover:text-black transition duration-300"
-      >
-        Hire me at ✉︎︎
-      </a>
-    </nav>
-
-    <!-- HERO -->
-    <section id="home" class="hero-section">
-      <div class="hero-gradient"></div>
-
-      <div class="hero-content">
-        <h1>
-          Softwere Engineer <br />
-          & <span>Designer</span>
-        </h1>
-
-        <p>
-          I create websites and visual designs, edit videos, and create modern
-          creative animations. In some cases, I modify artificial intelligence
-          in open-world games.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#portfolio" class="primary-btn"> See Portfolio </a>
-
-          <a
-            href="https://wa.me/6281234567890"
-            target="_blank"
-            class="secondary-btn"
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar" role="banner">
+      <div class="container navbar-inner">
+        <a href="#" class="logo" aria-label="Novan Wahyu R homepage">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            aria-hidden="true"
           >
-            Call me ✆
+            <rect
+              x="2"
+              y="2"
+              width="11"
+              height="11"
+              rx="3"
+              fill="currentColor"
+              opacity="0.9"
+            />
+            <rect
+              x="15"
+              y="2"
+              width="11"
+              height="11"
+              rx="3"
+              fill="currentColor"
+              opacity="0.4"
+            />
+            <rect
+              x="2"
+              y="15"
+              width="11"
+              height="11"
+              rx="3"
+              fill="currentColor"
+              opacity="0.4"
+            />
+            <rect
+              x="15"
+              y="15"
+              width="11"
+              height="11"
+              rx="3"
+              fill="currentColor"
+              opacity="0.2"
+            />
+          </svg>
+          Novan Wahyu R
+        </a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links" role="list">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="navbar-actions">
+          <a
+            href="#contact"
+            class="btn btn-primary"
+            style="font-size: var(--text-xs)"
+            >Hire Me</a
+          >
+          <button
+            class="theme-toggle"
+            data-theme-toggle
+            aria-label="Switch to light mode"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div
+      class="mobile-menu"
+      id="mobileMenu"
+      role="navigation"
+      aria-label="Mobile navigation"
+    >
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <main id="main">
+      <!-- ===== HERO SECTION ===== -->
+      <section id="hero" class="hero" aria-label="Hero section">
+        <div class="hero-bg" aria-hidden="true">
+          <img
+            src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/62597745-6c0e-4815-b2ec-cf3a8892b3bc.png"
+            alt=""
+            width="1920"
+            height="1080"
+            loading="eager"
+          />
+        </div>
+        <div class="hero-content container">
+          <div class="hero-grid">
+            <div class="hero-left">
+              <div class="hero-badge">
+                <span class="hero-badge-dot" aria-hidden="true"></span>
+                Available for Freelance
+              </div>
+              <h1 class="hero-heading">
+                Hey, I'm
+                <span class="line-accent">Novan WR</span>
+              </h1>
+              <p class="hero-tagline">
+                <strong>Web Designer & Creative</strong> based in Karawang &
+                Bandung
+              </p>
+              <p class="hero-desc">
+                I craft elegant digital experiences with a focus on clean
+                aesthetics, intuitive interactions, and purposeful design. Let's
+                build something remarkable together.
+              </p>
+              <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+                    />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                  Hire Me
+                </a>
+                <a href="#portfolio" class="btn btn-outline">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    aria-hidden="true"
+                  >
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="12" y1="17" x2="12" y2="21" />
+                  </svg>
+                  View Portfolio
+                </a>
+              </div>
+            </div>
+            <div class="hero-right">
+              <div class="hero-photo-wrapper">
+                <div class="hero-photo-ring-2" aria-hidden="true"></div>
+                <div class="hero-photo-ring" aria-hidden="true"></div>
+                <div class="hero-photo-glow" aria-hidden="true"></div>
+                <div class="hero-photo">
+                  <img
+                    src="novanwr.png"
+                    alt="Novan Wahyu R — Web Designer and Creative Professional"
+                    width="420"
+                    height="420"
+                    loading="eager"
+                  />
+                </div>
+                <!-- Float cards -->
+                <div class="hero-float-card" aria-hidden="true">
+                  <div class="float-card-content">
+                    <div class="float-card-icon">
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                        <polyline points="16 7 22 7 22 13" />
+                      </svg>
+                    </div>
+                    <div class="float-card-text">
+                      <span class="float-card-value">30+</span>
+                      <span class="float-card-label">Projects Done</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-float-card" aria-hidden="true">
+                  <div class="float-card-content">
+                    <div
+                      class="float-card-icon"
+                      style="
+                        background: var(--color-accent-2-dim);
+                        color: var(--color-accent-2);
+                      "
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        />
+                      </svg>
+                    </div>
+                    <div class="float-card-text">
+                      <span class="float-card-value">4.9</span>
+                      <span class="float-card-label">Client Rating</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-scroll-hint" aria-hidden="true">
+          <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+          <span class="scroll-hint-text">Scroll</span>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- ===== ABOUT SECTION ===== -->
+      <section id="about" class="section" aria-label="About me">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-text reveal">
+              <div>
+                <p class="section-label">About Me</p>
+                <h2 class="section-title">
+                  Passionate about <span class="accent">design</span> &amp;
+                  creativity
+                </h2>
+              </div>
+              <p class="about-description">
+                I'm a
+                <strong>multidisciplinary creative professional</strong> based
+                in karawang,Bandung, Indonesia with a deep passion for crafting
+                digital experiences that are both beautiful and functional. With
+                a background spanning web design, graphic design, and video
+                production, I bring a holistic perspective to every project.
+              </p>
+              <p class="about-description">
+                My work is driven by the belief that
+                <strong>great design solves real problems</strong>. Whether I'm
+                building a web interface, designing a brand identity, or editing
+                a cinematic video, I aim to create work that resonates and
+                endures.
+              </p>
+              <div class="about-stats">
+                <div class="stat-card reveal">
+                  <div class="stat-number" data-count="142">0</div>
+                  <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-card reveal">
+                  <div class="stat-number" data-count="7">0</div>
+                  <div class="stat-label">Years Exp.</div>
+                </div>
+                <div class="stat-card reveal">
+                  <div class="stat-number" data-count="36">0</div>
+                  <div class="stat-label">Clients</div>
+                </div>
+              </div>
+              <div style="display: flex; gap: var(--space-3); flex-wrap: wrap">
+                <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                <a href="#portfolio" class="btn btn-outline">My Work</a>
+              </div>
+            </div>
+            <div class="about-right reveal-clip">
+              <div class="about-img-wrapper">
+                <img
+                  src="novanwr.png"
+                  alt="Novan Wahyu R at work"
+                  width="480"
+                  height="600"
+                  loading="lazy"
+                />
+                <div class="about-img-overlay" aria-hidden="true"></div>
+                <div class="about-badge">
+                  <div class="about-badge-title">✦ Currently Available</div>
+                  <div class="about-badge-sub">
+                    Open to freelance &amp; full-time roles
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- ===== SERVICES SECTION ===== -->
+      <section id="services" class="section services-bg" aria-label="Services">
+        <div class="container">
+          <div
+            class="reveal"
+            style="text-align: center; max-width: 55ch; margin-inline: auto"
+          >
+            <p class="section-label">What I Do</p>
+            <h2 class="section-title">
+              Services I <span class="accent">offer</span>
+            </h2>
+            <p class="section-subtitle">
+              From concept to delivery — I cover the full spectrum of creative
+              digital services.
+            </p>
+          </div>
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18" />
+                  <path d="M9 21V9" />
+                </svg>
+              </div>
+              <h3 class="service-title">Web Design</h3>
+              <p class="service-desc">
+                Crafting modern, responsive websites with clean UI, seamless UX,
+                and pixel-perfect attention to detail.
+              </p>
+            </article>
+            <article class="service-card reveal">
+              <div
+                class="service-icon"
+                aria-hidden="true"
+                style="
+                  background: var(--color-accent-2-dim);
+                  color: var(--color-accent-2);
+                "
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M8 12h8M12 8v8" />
+                </svg>
+              </div>
+              <h3 class="service-title">Graphic Design</h3>
+              <p class="service-desc">
+                Brand identities, posters, social media assets, and print
+                materials designed with purpose and elegance.
+              </p>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polygon points="23 7 16 12 23 17 23 7" />
+                  <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                </svg>
+              </div>
+              <h3 class="service-title">Video Editing</h3>
+              <p class="service-desc">
+                Cinematic cuts, color grading, motion graphics integration —
+                telling stories through the power of video.
+              </p>
+            </article>
+            <article class="service-card reveal">
+              <div
+                class="service-icon"
+                aria-hidden="true"
+                style="
+                  background: var(--color-accent-2-dim);
+                  color: var(--color-accent-2);
+                "
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <h3 class="service-title">Animation</h3>
+              <p class="service-desc">
+                Motion graphics, animated explainers, and micro-interactions
+                that bring interfaces and stories to life.
+              </p>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                  />
+                  <path
+                    d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                  />
+                </svg>
+              </div>
+              <h3 class="service-title">Content Editing</h3>
+              <p class="service-desc">
+                Refining written and visual content for clarity, tone
+                consistency, and audience engagement across platforms.
+              </p>
+            </article>
+            <article
+              class="service-card reveal"
+              style="
+                border-color: rgba(0, 212, 255, 0.15);
+                background: var(--color-accent-glow);
+              "
+            >
+              <div class="service-icon" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </div>
+              <h3 class="service-title">UI/UX Consulting</h3>
+              <p class="service-desc">
+                Design audits, wireframes, and prototypes — helping teams ship
+                better products with a stronger user focus.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- ===== SKILLS SECTION ===== -->
+      <section id="skills" class="section" aria-label="Skills">
+        <div class="container">
+          <div class="reveal">
+            <p class="section-label">Expertise</p>
+            <h2 class="section-title">
+              My <span class="accent">skill</span> set
+            </h2>
+            <p class="section-subtitle">
+              A blend of technical proficiency and creative versatility built
+              through years of hands-on work.
+            </p>
+          </div>
+          <div class="skills-layout">
+            <div class="skills-bars" id="skillBars">
+              <div class="skill-item reveal">
+                <div class="skill-header">
+                  <span class="skill-name">HTML & CSS</span
+                  ><span class="skill-pct">92%</span>
+                </div>
+                <div class="skill-track">
+                  <div
+                    class="skill-fill"
+                    style="--pct: 0.92"
+                    data-width="92"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item reveal">
+                <div class="skill-header">
+                  <span class="skill-name">JavaScript</span
+                  ><span class="skill-pct">78%</span>
+                </div>
+                <div class="skill-track">
+                  <div
+                    class="skill-fill"
+                    style="--pct: 0.78"
+                    data-width="78"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item reveal">
+                <div class="skill-header">
+                  <span class="skill-name">UI/UX Design (Figma)</span
+                  ><span class="skill-pct">88%</span>
+                </div>
+                <div class="skill-track">
+                  <div
+                    class="skill-fill"
+                    style="--pct: 0.88"
+                    data-width="88"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item reveal">
+                <div class="skill-header">
+                  <span class="skill-name">Video Editing</span
+                  ><span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-track">
+                  <div
+                    class="skill-fill"
+                    style="--pct: 0.85"
+                    data-width="85"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item reveal">
+                <div class="skill-header">
+                  <span class="skill-name">Graphic Design</span
+                  ><span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-track">
+                  <div
+                    class="skill-fill"
+                    style="--pct: 0.9"
+                    data-width="90"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item reveal">
+                <div class="skill-header">
+                  <span class="skill-name">Motion Design</span
+                  ><span class="skill-pct">72%</span>
+                </div>
+                <div class="skill-track">
+                  <div
+                    class="skill-fill"
+                    style="--pct: 0.72"
+                    data-width="72"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="skills-badges-wrapper reveal">
+              <div>
+                <p
+                  class="skills-badges-title"
+                  style="margin-bottom: var(--space-3)"
+                >
+                  Design Tools
+                </p>
+                <div class="skills-badges">
+                  <span class="skill-badge">Figma</span>
+                  <span class="skill-badge">Adobe XD</span>
+                  <span class="skill-badge">Photoshop</span>
+                  <span class="skill-badge">Illustrator</span>
+                  <span class="skill-badge">After Effects</span>
+                  <span class="skill-badge">Premiere Pro</span>
+                  <span class="skill-badge">Canva Pro</span>
+                </div>
+              </div>
+              <div>
+                <p
+                  class="skills-badges-title"
+                  style="margin-bottom: var(--space-3)"
+                >
+                  Development
+                </p>
+                <div class="skills-badges">
+                  <span class="skill-badge">HTML5</span>
+                  <span class="skill-badge">CSS3</span>
+                  <span class="skill-badge">JavaScript</span>
+                  <span class="skill-badge">Tailwind CSS</span>
+                  <span class="skill-badge">React (Basic)</span>
+                  <span class="skill-badge">WordPress</span>
+                  <span class="skill-badge">Git</span>
+                </div>
+              </div>
+              <div>
+                <p
+                  class="skills-badges-title"
+                  style="margin-bottom: var(--space-3)"
+                >
+                  Automation & Tools
+                </p>
+                <div class="skills-badges">
+                  <span class="skill-badge">Make.com</span>
+                  <span class="skill-badge">n8n</span>
+                  <span class="skill-badge">VBA</span>
+                  <span class="skill-badge">Notion</span>
+                  <span class="skill-badge">Telegram Bot</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- ===== PORTFOLIO SECTION ===== -->
+      <section
+        id="portfolio"
+        class="section portfolio-bg"
+        aria-label="Portfolio"
+      >
+        <div class="container">
+          <div class="portfolio-header">
+            <div class="reveal">
+              <p class="section-label">My Work</p>
+              <h2 class="section-title">
+                Featured <span class="accent">projects</span>
+              </h2>
+            </div>
+            <div
+              class="portfolio-filters"
+              role="group"
+              aria-label="Filter projects"
+            >
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="web">Web</button>
+              <button class="filter-btn" data-filter="design">Design</button>
+              <button class="filter-btn" data-filter="video">Video</button>
+            </div>
+          </div>
+          <div class="portfolio-grid" id="portfolioGrid">
+            <!-- Project 1 -->
+            <article class="project-card reveal" data-category="web">
+              <div class="project-img">
+                <img
+                  src="conten 1.png"
+                  alt="Portfolio project mockup showing web design interface"
+                  width="640"
+                  height="360"
+                  loading="lazy"
+                />
+                <span class="project-tag">Web Design</span>
+                <div class="project-overlay">
+                  <a
+                    href="conten 1.png"
+                    class="btn btn-primary"
+                    style="
+                      padding: var(--space-2) var(--space-5);
+                      font-size: var(--text-xs);
+                    "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View project</a
+                  >
+                  <a
+                    href="https://github.com/login"
+                    class="btn btn-outline"
+                    style="
+                      padding: var(--space-2) var(--space-5);
+                      font-size: var(--text-xs);
+                    "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">FinTech Dashboard</h3>
+                <p class="project-desc">
+                  A modern financial analytics dashboard with real-time data
+                  visualization and dark mode interface.
+                </p>
+                <div class="project-footer">
+                  <div class="project-techs">
+                    <span class="tech-chip">React</span>
+                    <span class="tech-chip">Tailwind</span>
+                    <span class="tech-chip">Chart.js</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="#"
+                      class="btn-ghost"
+                      aria-label="View demo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >→</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Project 2 -->
+            <article class="project-card reveal" data-category="design">
+              <div class="project-img">
+                <img
+                  src="konten logo.png"
+                  alt="Brand identity design project with geometric logo and dark aesthetic"
+                  width="640"
+                  height="360"
+                  loading="lazy"
+                />
+                <span
+                  class="project-tag"
+                  style="
+                    background: var(--color-accent-2-dim);
+                    border-color: rgba(255, 140, 66, 0.3);
+                    color: var(--color-accent-2);
+                  "
+                  >Branding</span
+                >
+                <div class="project-overlay">
+                  <a
+                    href="konten logo.png"
+                    class="btn btn-primary"
+                    style="
+                      padding: var(--space-2) var(--space-5);
+                      font-size: var(--text-xs);
+                    "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Lunar Brand Identity</h3>
+                <p class="project-desc">
+                  Full brand identity system for a premium lifestyle brand logo,
+                  typography, color palette, and guidelines.
+                </p>
+                <div class="project-footer">
+                  <div class="project-techs">
+                    <span class="tech-chip">Illustrator</span>
+                    <span class="tech-chip">Figma</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="#"
+                      class="btn-ghost"
+                      aria-label="View project"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >→</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Project 3 -->
+            <article class="project-card reveal" data-category="video">
+              <div class="project-img">
+                <img
+                  src="proses.png"
+                  alt="Video editing timeline showing cinematic color grading work"
+                  width="640"
+                  height="360"
+                  loading="lazy"
+                />
+                <span class="project-tag">Video</span>
+                <div class="project-overlay">
+                  <a
+                    href="dokumentasi vidio.mp4"
+                    class="btn btn-primary"
+                    style="
+                      padding: var(--space-2) var(--space-5);
+                      font-size: var(--text-xs);
+                    "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Download & Watch Film</a
+                  >
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Documentary Short Film</h3>
+                <p class="project-desc">
+                  short video clip that I made,I use Filmora and CapCut.
+                </p>
+                <div class="project-footer">
+                  <div class="project-techs">
+                    <span class="tech-chip">Premiere Pro</span>
+                    <span class="tech-chip">After Effects</span>
+                    <span class="tech-chip">Filmora</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="#"
+                      class="btn-ghost"
+                      aria-label="Watch film"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >→</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Project 4 -->
+            <article class="project-card reveal" data-category="web">
+              <div class="project-img">
+                <img
+                  src="konten tingkah ai.png"
+                  alt="Web app interface with clean dark UI design"
+                  width="640"
+                  height="360"
+                  loading="lazy"
+                />
+                <span class="project-tag">Script</span>
+                <div class="project-overlay">
+                  <a
+                    href="https://www.youtube.com/watch?v=MhOPLbjrcY4"
+                    class="btn btn-primary"
+                    style="
+                      padding: var(--space-2) var(--space-5);
+                      font-size: var(--text-xs);
+                    "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >See gameplay</a
+                  >
+                  <a
+                    href="https://www.moddb.com/games/battlefield-2/mods"
+                    class="btn btn-outline"
+                    style="
+                      padding: var(--space-2) var(--space-5);
+                      font-size: var(--text-xs);
+                    "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Mod</a
+                  >
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">AI <b></b>Behavior</h3>
+                <p class="project-desc">
+                  developing artificial intelligence in behavioral modification
+                  to suit industrial desires, battlefield 2 modDB.
+                </p>
+                <div class="project-footer">
+                  <div class="project-techs">
+                    <span class="tech-chip">JavaScript</span>
+                    <span class="tech-chip">script</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://www.moddb.com/games/battlefield-2/mods"
+                      class="btn-ghost"
+                      aria-label="View app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >→</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Project 5 -->
+            <article class="project-card reveal" data-category="design">
+              <div class="project-img">
+                <img
+                  src="konten poster.png"
+                  alt="Modern poster design with geometric elements and bold typography"
+                  width="640"
+                  height="360"
+                  loading="lazy"
+                />
+                <span
+                  class="project-tag"
+                  style="
+                    background: var(--color-accent-2-dim);
+                    border-color: rgba(255, 140, 66, 0.3);
+                    color: var(--color-accent-2);
+                  "
+                  >Poster</span
+                >
+                <div class="project-overlay">
+                  <a
+                    href="konten poster.png"
+                    class="btn btn-primary"
+                    style="
+                      padding: var(--space-2) var(--space-5);
+                      font-size: var(--text-xs);
+                    "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View Design</a
+                  >
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Event Poster Series</h3>
+                <p class="project-desc">
+                  I made 6 random posters with a military animation concept
+                </p>
+                <div class="project-footer">
+                  <div class="project-techs">
+                    <span class="tech-chip">Photoshop</span>
+                    <span class="tech-chip">Illustrator</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="#"
+                      class="btn-ghost"
+                      aria-label="View series"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >→</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Project 6 -->
+            <article class="project-card reveal" data-category="web">
+              <div class="project-img">
+                <img
+                  src="alam.png"
+                  alt="Landing page design with modern dark aesthetic and clear call to action"
+                  width="640"
+                  height="360"
+                  loading="lazy"
+                />
+                <span class="project-tag">Landing Page</span>
+                <div class="project-overlay">
+                  <a
+                    href="alam.png"
+                    class="btn btn-primary"
+                    style="
+                      padding: var(--space-2) var(--space-5);
+                      font-size: var(--text-xs);
+                    "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View project</a
+                  >
+                  <a
+                    href="https://github.com/login"
+                    class="btn btn-outline"
+                    style="
+                      padding: var(--space-2) var(--space-5);
+                      font-size: var(--text-xs);
+                    "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">SaaS Landing Page</h3>
+                <p class="project-desc">
+                  High-conversion landing page for a project management SaaS
+                  optimized for performance and clarity.
+                </p>
+                <div class="project-footer">
+                  <div class="project-techs">
+                    <span class="tech-chip">HTML</span>
+                    <span class="tech-chip">CSS</span>
+                    <span class="tech-chip">JS</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="#"
+                      class="btn-ghost"
+                      aria-label="View page"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >→</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- ===== CONTACT SECTION ===== -->
+      <section id="contact" class="section" aria-label="Contact">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-info reveal">
+              <div>
+                <p class="section-label">Get In Touch</p>
+                <h2 class="section-title">
+                  Let's <span class="accent">work</span> together
+                </h2>
+                <p class="section-subtitle">
+                  Have a project in mind or just want to say hello? I'd love to
+                  hear from you.
+                </p>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: var(--space-5);
+                "
+              >
+                <div class="contact-item">
+                  <div class="contact-icon" aria-hidden="true">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-item-label">Email</div>
+                    <div class="contact-item-value">
+                      novanwahyur711@gmail.com
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon" aria-hidden="true">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-item-label">Location</div>
+                    <div class="contact-item-value">
+                      Bandung,karawang, Indonesia
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div
+                    class="contact-icon"
+                    aria-hidden="true"
+                    style="
+                      background: var(--color-accent-2-dim);
+                      color: var(--color-accent-2);
+                    "
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-item-label">Phone / WhatsApp</div>
+                    <div class="contact-item-value">+62 812 3456 7890</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p
+                  class="skills-badges-title"
+                  style="margin-bottom: var(--space-3)"
+                >
+                  Find me on
+                </p>
+                <div class="contact-socials">
+                  <a
+                    href="https://www.instagram.com/username_tvan707"
+                    class="social-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram profile"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      aria-hidden="true"
+                    >
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                      <path
+                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                      />
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                    Instagram
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/login/in?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+                    class="social-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn profile"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                      />
+                      <rect x="2" y="9" width="4" height="12" />
+                      <circle cx="4" cy="4" r="2" />
+                    </svg>
+                    LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/login"
+                    class="social-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub profile"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                    GitHub
+                  </a>
+                  <a
+                    href="https://www.behance.net/"
+                    class="social-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Behance profile"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      aria-hidden="true"
+                    >
+                      <path d="M8 12h6M8 8h4a2 2 0 0 1 0 4H8z" />
+                      <path d="M8 12h5a2 2 0 0 1 0 4H8z" />
+                      <rect x="2" y="3" width="20" height="18" rx="2" />
+                    </svg>
+                    Behance
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form-card reveal">
+              <h3 class="form-title">
+                Send a <span class="accent">message</span>
+              </h3>
+              <form class="form-grid" id="contactForm" novalidate>
+                <div class="form-group">
+                  <label class="form-label" for="fname">First Name</label>
+                  <input
+                    class="form-input"
+                    id="fname"
+                    type="text"
+                    placeholder="Your first name"
+                    autocomplete="given-name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="lname">Last Name</label>
+                  <input
+                    class="form-input"
+                    id="lname"
+                    type="text"
+                    placeholder="Your last name"
+                    autocomplete="family-name"
+                  />
+                </div>
+                <div class="form-group full">
+                  <label class="form-label" for="email">Email Address</label>
+                  <input
+                    class="form-input"
+                    id="email"
+                    type="email"
+                    placeholder="you@email.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+                <div class="form-group full">
+                  <label class="form-label" for="subject">Subject</label>
+                  <input
+                    class="form-input"
+                    id="subject"
+                    type="text"
+                    placeholder="What is this about?"
+                  />
+                </div>
+                <div class="form-group full">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea
+                    class="form-textarea"
+                    id="message"
+                    placeholder="Tell me about your project..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-group full">
+                  <button type="submit" class="form-submit">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      aria-hidden="true"
+                    >
+                      <line x1="22" y1="2" x2="11" y2="13" />
+                      <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                    </svg>
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p class="footer-copyright">
+          © 2026 <strong>Novan Wahyu R</strong>. Crafted with ♡ in Bandung.
+        </p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-socials">
+          <a
+            href="https://www.instagram.com/username_tvan707"
+            class="footer-social-btn"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/login/in?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+            class="footer-social-btn"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/login"
+            class="footer-social-btn"
+            aria-label="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              />
+            </svg>
           </a>
         </div>
       </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="about-section">
-      <div class="about-image">
-        <img src="novanwr.png" />
-      </div>
-
-      <div class="about-content">
-        <span>ABOUT ME</span>
-
-        <h2>Design & Softwere Engineer</h2>
-
-        <p>
-          Focuses on producing high-quality digital content using Adobe
-          Illustrator and Photoshop, Filmora, Adobe Premiere Pro, and front-end
-          development and AI behavior modification based on scripts and code.
-        </p>
-
-        <div class="about-stats">
-          <div class="glass-card">
-            <h3>7+</h3>
-            <p>Years of Passion</p>
-          </div>
-
-          <div class="glass-card">
-            <h3>50+</h3>
-            <p>Project completed</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="skills-section">
-      <div class="section-title">
-        <span>SPECIALIZATION</span>
-        <h2>Core Technical Skills</h2>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-card">
-          <span class="material-symbols-outlined">movie</span>
-          <h3>Video Editing</h3>
-          <p>Filmora & Premiere Pro</p>
-        </div>
-
-        <div class="skill-card">
-          <span class="material-symbols-outlined">palette</span>
-          <h3>Graphic Design</h3>
-          <p>Modern Design</p>
-        </div>
-
-        <div class="skill-card">
-          <span class="material-symbols-outlined">animation</span>
-          <h3>Animation</h3>
-          <p>Motion & Keyframe</p>
-        </div>
-
-        <div class="skill-card">
-          <span class="material-symbols-outlined">code</span>
-          <h3>Web & Game Dev</h3>
-          <p>HTML CSS JS</p>
-          <p>AI behivior</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      <h2>NOVAN WAHYU R</h2>
-
-      <p>© 2026 Novan Wahyu R. All Rights Reserved</p>
     </footer>
 
-    <!-- JS -->
-    <script src="script.js"></script>
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        aria-hidden="true"
+      >
+        <polyline points="18 15 12 9 6 15" />
+      </svg>
+    </button>
+    <script src="script.js" defer></script>
   </body>
 </html>
